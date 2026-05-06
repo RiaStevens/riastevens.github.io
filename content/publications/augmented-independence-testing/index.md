@@ -1,13 +1,12 @@
 ---
-title: 'High-Probability Bounds for Heterogeneous Local Differential Privacy'
+title: 'Optimal Prediction-Augmented Algorithms for Testing Independence of Distributions'
 
 # Authors
 # If you created a profile for a user (e.g. the default `me` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - Maryam Aliakbarpour
-  - Alireza Fallah
-  - Swaha Roy
+  - Alireza Azizi
   - me
 
 # Author notes (optional)
@@ -15,7 +14,7 @@ authors:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2025-10-01T00:00:00Z'
+date: '2026-03-04T00:00:00Z'
 
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2025-01-01T00:00:00Z'
@@ -26,17 +25,18 @@ date: '2025-10-01T00:00:00Z'
 # publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *The 29th International Conference on Artificial Intelligence and Statistics (AISTATS 2026)*
-publication_short: In *AISTATS 2026*
+publication: To appear at the *Thirty-Ninth Annual Conference on Learning Theory (COLT 2025)*
+publication_short: To appear at *COLT 2026*
 
-abstract: We study statistical estimation under local differential privacy (LDP) when users may hold heterogeneous privacy levels and accuracy must be guaranteed with high probability. Departing from the common in-expectation analyses, and for one-dimensional and multi-dimensional mean estimation problems, we develop finite sample upper bounds in  $\ell_2$-norm that hold with probability at least  $1-\beta$. We complement these results with matching minimax lower bounds, establishing the optimality (up to constants) of our guarantees in the heterogeneous LDP regime. We further study distribution learning in $\ell_\infty$-distance, designing an algorithm with high-probability guarantees under heterogeneous privacy demands. Our techniques offer principled guidance for designing mechanisms in settings with user-specific privacy levels.
+abstract: Independence testing is a fundamental problem in statistical inference. Given samples from a joint distribution $p$ over multiple random variables, the goal is to determine whether $p$ is a product distribution or is $\epsilon$-far from all product distributions in total variation distance. In the non-parametric finite-sample regime, this task is notoriously expensive, as the minimax sample complexity scales polynomially with the support size. In this work, we move beyond these worst-case limitations by leveraging the framework of \textit{augmented distribution testing}. We design independence testers that incorporate auxiliary, but potentially untrustworthy, predictive information. Our framework ensures that the tester remains robust, maintaining worst-case validity regardless of the prediction's quality, while significantly improving sample efficiency when the prediction is accurate. Our main contributions include (i) a bivariate independence tester for discrete distributions that adaptively reduces sample complexity based on the prediction error; (ii) a generalization to the high-dimensional multivariate setting for testing the independence of $d$ random variables; and (iii) matching minimax lower bounds demonstrating that our testers achieve optimal sample complexity.
 
+draft: false
 # Summary. An optional shortened abstract.
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags:
-  - Differential Privacy
-  - Hypothesis Selection
+  - Independence Testing
+  - Augmented Algorithms
 
 # Display this page in the Featured widget?
 featured: true
@@ -44,14 +44,16 @@ featured: true
 # Standard identifiers for auto-linking
 hugoblox:
   ids:
-    arxiv: 2510.11895
+    arxiv: 2603.04635
 
 # Custom links
 links:
   - type: pdf
-    url: "HLDP-paper.pdf"
+    url: "indTest-paper.pdf"
   # - type: slides
   #   url: https://neurips.cc/virtual/2025/loc/mexico-city/poster/118634
+  # - type: poster
+  #   url: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/118634.png?t=1764133151.245049
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
